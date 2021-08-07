@@ -9,3 +9,57 @@ The manager should also be able to view the average waiting period for different
 Major Entities: trucks management, offices, consignments etc.
 
 Major functionalities: consignment details, status of the consignments, truck details etc.
+
+# Requirements- 
+
+Process: printing the consignment details queried with the consignment id by manager.
+Output: status of any particular consignment and the details of volume of consignments handled to any particular destination and the corresponding revenue generated.
+
+R1: updating consignment details.
+Input: consignment id and volume (measured in cubic meter), senders address, destination address
+Process: updating consignment details in database.
+Output: None.
+
+R2: Billing.
+Input: volume, destination address, sender address.
+Process: computing the transport charge depending upon the volume of the consignment and the distribution 
+Output: bill for the consignment.
+
+R3: Allocating truck.
+Input: volume of consignments.
+Process: system automatically allocate the truck until total volume of truck reaches 500 cbm, then new allocation.
+Output: None.
+
+R4: Checking status of trucks at a given time and over a period of time.
+Input: current location, starting point, time interval. 
+Process: updating database regarding truck’s status.
+Output: status of truck.
+
+R5: Print details of consignment and truck on availability before dispatch. 
+Input: consignment id, volume, senders address and name, receivers address and name, truck id
+Process: print details.
+Output: the details of the consignment number, volume, sender's name and address, and the receiver's name and address to be forwarded along with the truck.
+
+R6: Facility for the manager to check Consignment details.
+Input: consignment id.
+
+R7: Manager can check the average waiting time of consignment.
+Input: consignment id. Dispatch time, issued time
+Process: Calculate the average waiting time
+Output: Average waiting time for different consignment.
+
+R8: Order new Truck
+Input: average waiting time
+Process: Order a new truck if average wait time is greater than threshold, if yes then order new truck
+Output: print new truck id
+
+R8: Average idle time for truck at a branch.
+Input: Truck id, branch id, truck issue time, truck time dispatch time
+Process: Calculate the average idle time for a truck
+Output: Print Average idle time.
+
+
+
+
+
+
