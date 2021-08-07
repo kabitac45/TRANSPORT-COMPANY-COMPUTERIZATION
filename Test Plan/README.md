@@ -1,0 +1,9 @@
+- The transport company must have a head office and some other branches located in other cities.
+- The transport company should own a certain number of trucks (maybe 1).
+- The software should work across all the platforms.
+- The computer must have 512MB of RAM and basic resolution.
+- The computer must have all the basic hardware’s and other parts working (keyboard and monitor).
+- Number of trucks available should be (>=1) if a new consignment comes and the order is >500 cubic meters.
+- All boundary case scenarios when the Truck is not assigned and we check the AWT or AIT of the truck in use.
+- Security and Safety of the software such that the details are not shared with anyone and is only accessible to the administrator of the software.
+- Only authorized person is able to enter details of the consignments and truck is assigned and can check the status of the truck.
